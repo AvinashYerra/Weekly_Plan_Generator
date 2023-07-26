@@ -44,19 +44,18 @@ const StudyRoadmap = () => {
 
   return (
     <div className="study-roadmap-container">
+      <p className="paraContainer">Enter the Duration and Topic to get your roadmap</p>
       <form onSubmit={handleSubmit}>
         <label>
-          Duration:
           <input type="text" value={duration} onChange={handleDurationChange} className="input-field" placeholder='Enter duration in weeks'/>
         </label>
         <br />
         <label>
-          Topic:
           <input type="text" value={topic} onChange={handleTopicChange} className="input-field" placeholder='Enter the topic'/>
         </label>
         <br />
         <div className="generate-button-container">
-        <button type="submit" className="generate-button">Generate Roadmap</button>
+        <button type="submit" className="generateButton">Generate Roadmap</button>
         </div>
       </form>
       {roadmap && (

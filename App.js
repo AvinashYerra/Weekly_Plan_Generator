@@ -4,7 +4,7 @@ import './StudyRoadmap.css'
 
 const App = () => {
   return (
-    <div>
+    <div className="mainContainer">
       <h1>Weekly-Plan-Generator</h1>
       <StudyRoadmap />
     </div>
